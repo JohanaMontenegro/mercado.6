@@ -7,12 +7,11 @@ while (precioP1 <= 0) {
 let cantidadP1: number = Number(prompt("Ingresa el stock del producto"));
 while (cantidadP1 <= 0) {
   console.log("Ingrese un precio mayor a 0");
-  //cantidadP1 = Number(prompt("Ingresa el stock del producto"));
+cantidadP1 = Number(prompt("Ingresa el stock del producto"));
 }
 let producto2: string = prompt("Ingresa un producto");
 let precioP2: number = Number(
-  prompt("Ingresa el precio por unidad del producto")
-);
+  prompt("Ingresa el precio por unidad del producto"));
 while (precioP2 <= 0) {
   console.log("Ingrese un precio mayor a 0");
   precioP2 = Number(prompt("Ingresa el precio por unidad del producto"));
@@ -23,9 +22,7 @@ while (cantidadP2 <= 0) {
   cantidadP2 = Number(prompt("Ingresa el stock del producto"));
 }
 let producto3: string = prompt("Ingresa un producto");
-let precioP3: number = Number(
-  prompt("Ingresa el precio por unidad del producto")
-);
+let precioP3: number = Number(prompt("Ingresa el precio por unidad del producto"));
 while (precioP3 <= 0) {
   console.log("Ingrese un precio mayor a 0");
   precioP3 = Number(prompt("Ingresa el precio por unidad del producto"));
@@ -46,17 +43,17 @@ let cantidadCompra: number = Number(prompt("Cuanto productos quieres comprar?"))
 
 if (cantidadCompra <= 0 || cantidadCompra > cantidadP1){
 for(let i= 0; i < cantidadCompra; i++)
-cantidadCompra += cantidadP1
-
+cantidadCompra += cantidadP1;
+}
 console.log("La cantida a comprar no es validad, es mayor al stock disponible o menor a 0");
   cantidadCompra = Number(prompt("Cuanto productos quieres comprar?"));
   console.log("El precio a pagar es", precioP1 * cantidadCompra, "pesos");
   console.log("Quedan",cantidadP1 - cantidadCompra,"unidades restantes de",producto1);
-}
+
   if(cantidadCompra <=0 || cantidadCompra > cantidadP2){
   for(let i= 0; i > cantidadCompra; i++);
-  cantidadCompra += cantidadP2
-
+  cantidadCompra += cantidadP2;
+  }
 console.log("la cntidad a comprar no es valida, es mayor al stock disponible o menor a 0");
   cantidadCompra = Number(prompt("cuantos productos quieres comprar?"));
   console.log("el precio a pagar es", precioP2 * cantidadCompra, "pesos");
@@ -64,10 +61,9 @@ console.log("la cntidad a comprar no es valida, es mayor al stock disponible o m
   }
     if(cantidadCompra <= 0 || cantidadCompra < cantidadP3) {
       for( let i=0 ; i > cantidadCompra; i++)
-      cantidadCompra += cantidadP3
-
+      cantidadCompra += cantidadP3;
+    }
 console.log("la cantidad a comprar no es valida, es mayor al stock disponible o menor o igual 0");
     cantidadCompra = Number(prompt("cuantos productosquieres comprar?"));
       console.log("El precio  pagar es",precioP3 * cantidadCompra, "pesos");
       console.log("Quedan" cantidadP3 - cantidadCompra,"unidades restantes de" producto3);
-    }
